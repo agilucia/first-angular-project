@@ -1,0 +1,48 @@
+<!-- <div>
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <div class="main-body">
+    <div class="side-nav">
+      <app-sidenav></app-sidenav>
+    </div>
+    <div class="main">
+      <app-main></app-main>
+    </div>
+  </div>
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+</div> -->
+<!--
+<div class="container">
+  <h1>Data Binding</h1>
+  <h2>String Interpolation</h2>
+  <span>My name is {{ firstName }}</span>
+
+  <h2>Property Binding</h2>
+  <p>it uses []</p>
+
+  <h2>Event Binding</h2>
+  <input type="text" (input)="passValueToComponent($event)" />
+
+  <h2>Two way Binding</h2>
+  <input type="text" [(ngModel)]="defaultVal" />
+  <span>{{ defaultVal }}</span>
+</div> -->
+
+
+<h2>Data Binding</h2>
+
+<div>
+  <input type="text" [(ngModel)]="formValue">
+</div>
+<br>
+<div>
+  {{formValue}}
+</div>
+<br>
+<br>
+<div>
+  <button [disabled]="isBtnDisabled" (click)="checkForm()">Check form</button>
+</div>
